@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+</head>
+<style>
+    #container {
+        margin-left: 650px;
+        margin-top: 150px;
+    }
+
+
+
+    #ask_btn {
+        background-color: lightsalmon;
+        padding: 5px 8px;
+        border-radius: 10px;
+        cursor: pointer;
+
+    }
+
+
+    #ask_btn:hover {
+        background-color: fuchsia;
+    }
+
+
+
+    #soal {
+
+        background-color: #ffff;
+        font-size: 15px;
+    }
+</style>
+
+
+
+
+<body>
+
+
+    <div id="container">
+        choose you question? : <input type="text" name="qa" id="soal" placeholder="question">
+
+        <button type="button" id="ask_btn">Ask</button><br>
+
+        <p id="result"></p>
+    </div>
+
+
+
+
+</body>
+
+<script>
+
+
+    let soal = document.getElementById('soal');
+    let btn = document.getElementById("ask_btn");
+    let payam = document.getElementById("result");
+
+
+    let answer_array = ["i love you", "you are beautiful", "yoou are very hot", "charismatic", "lovely"]
+
+
+
+    btn.addEventListener("click", function () {
+        if (soal.value != "") {
+            let res = Math.floor(Math.random() * answer_array.length);
+            payam.innerHTML = soal.value + " " + "|" + answer_array[res];
+            soal.value = "";
+        }
+
+        else {
+            payam.innerHTML = "please enter your question!!!!!!!!!!";
+
+        }
+    })
+
+
+
+
+
+</script>
+
+</html>

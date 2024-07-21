@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>new</title>
+</head>
+
+<style>
+    .rang {
+        color: red;
+        background-color: skyblue;
+    }
+</style>
+
+
+
+<body>
+
+    <h1 id="name"></h1>
+
+    <h3 id="tily"></h3>
+
+    <br>
+    <button type="button" id="btn">نمایش نوشته ها</button>
+    <br>
+    <br>
+    <button type="button" id="dokmeh">اضافه شدن کلاس</button>
+</body>
+<script>
+
+
+    function write() {
+        let par1 = document.getElementById("name").innerHTML = "my name is Ali";
+
+        let par2 = document.getElementById("tily").innerHTML = "my skill is programing";
+
+    }
+
+
+    btn.addEventListener("click", write);
+
+
+
+
+    dokmeh.addEventListener("click",function(){
+        let par1 = document.getElementById("name");  
+        par1.classList.add("rang");
+
+    })
+
+
+
+
+
+
+</script>
+
+</html>

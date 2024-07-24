@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+header {
+    width: 100%;
+    height: 20vh;
+    background-color: rgb(37, 83, 153);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.first {
+    color: aliceblue;
+    font-size: 4em;
+}
+
+.second {
+    color: aliceblue;
+    font-size: 2em;
+}
+
+main {
+    background-color: darkgrey;
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.matn {
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+#matn {
+    width: 65%;
+    height: 34vh;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 1.6em;
+}
+
+.counters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.counter {
+    width: 200px;
+    height: 150px;
+    color: black;
+    background-color: aliceblue;
+    font-size: 1em;
+    border: 2px solid rgb(128, 128, 128);
+    border-radius: 22px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+p {
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+
+footer {
+    height: 5vh;
+    background-color: rgb(37, 83, 153);
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
